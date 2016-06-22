@@ -1,0 +1,232 @@
+Prabhala, Suchitra 4:37 PM
+Please press *6 to unmute your line if you have any questions during the session
+you may want o ping your question as well 
+to*
+there will be dedicated Q&A session at the end of the session as well
+Mackerracher, Eva 4:41 PM
+It may not be so clear, who the supporting organization is
+how can I be sure I choose the correct one?
+Rao, Preeti (Ext) 4:42 PM
+The support organization will be DveIT for all RDI Applications. This will also be clearly mentioned in Novapedia and training documents for end users.
+Prabhala, Suchitra 4:42 PM
+we are takinga note of your questions..we will answer it in sometime
+Manglani, Bharti (Ext) 4:43 PM
+Wat abt SR forms.. how will these be seen to users?
+Revanna, Suresh S 4:43 PM
+hi suchitra just to know out of curiosity how my name was nominated as am from analytical working in genome valley site supporting qualfication here
+Rao, Preeti (Ext) 4:44 PM
+These are SR forms that Andrzej is showing. End users will have a link that will take them to this module directly
+Lecaplain, Stephane 4:44 PM
+What about application available in ROD but do not show up in the Application fields by typing 3 first characters ?
+Prabhala, Suchitra 4:45 PM
+Suresh - We got your names from AMs or your DSG or may be someone forwarded it to you
+Manglani, Bharti (Ext) 4:45 PM
+Yes; but we have template based SR forms for our applciation.. 
+how how will these be incorporated?
+Rao, Preeti (Ext) 4:45 PM
+All the applications which are onboarded in RoD as part of either any wave, will be visible in Application dropdown.If for any technical reason it is not then an incident can be raised for the support team and they will look into this to fix the issue.
+Lecaplain, Stephane 4:46 PM
+ok thanks for the clear reply
+Rao, Preeti (Ext) 4:47 PM
+Bharti - currently only generic forms are enabled for end users. Customized forms are not in current project scope but we are discusiing it with ITTP and will let you know once any decision is been made on that.
+Nagy, Szilard Dezso (Ext) 4:47 PM
+compared to I.MAN, that's a pretty inconvenient workaround for SR tickets
+Rao, Preeti (Ext) 4:47 PM
+Bharti - currently only generic forms are enabled for end users. Customized forms are not in current project scope but we are discusiing it with ITTP and will let you know once any decision is been made on that. 
+Manglani, Bharti (Ext) 4:48 PM
+oh oki.. Thanks for the clarification
+Francis, Ian 4:48 PM
+so the request for an application does not appear in the support queue?
+I am missing the link between this WO and the REQ....it seems a bit confusing
+Rao, Preeti (Ext) 4:49 PM
+We are sorry if this looks inconvenient but it could also be be because this is new but we wre trying our best to keep it simple  for end users. Also discussing various options within teams and ITTP to make it more convenient for users.
+Moussata, Oirdia 4:50 PM
+How we know the support relevant for my system
+Rao, Preeti (Ext) 4:51 PM
+Ian - The Request that end user submits actually resolved either to Work order or Incident for teh support teams and that is visible in their queue. The Wo or Incident genetaed vis SR also has a refernce to respective SR so the supoort users can see that the ticket is generated via SR.
+Nagy, Szilard Dezso (Ext) 4:52 PM
+in standard ITIL terminology, there are 'Incidents' and 'Service Requests'
+Rao, Preeti (Ext) 4:52 PM
+Oirdia - when end users selects an application and submit request, the system automatically routes teh ticket to that application's support group. This is configured in backend.So all end users need to know is for which application they are looging ticket and the system automatically take scare of which support group to assign.
+Nagy, Szilard Dezso (Ext) 4:53 PM
+how does a WO relate to those?
+Rao, Preeti (Ext) 4:55 PM
+Dezso - Thats right , i am sure you understand what Incidents are. And Service requests basically are requests from end users but what may look like a SR to end users could be incident, Work Order or change from support (internal) team perspective and so this concept in RoD.There are some forms which in backend creates multiple Work orders Or/And combination of WO, Incident, Change...So basically for a end users its just one SR that he has to follow up or care about. The actual implementaion happens in backend, keeping it simple for end user.
+Manglani, Bharti (Ext) 4:56 PM
+so how does RoD decide on Incident SR or Change?
+if for end user it is onlY SR?
+Singh, Prakash Kumar (Ext) 4:58 PM
+Good question
+Rao, Preeti (Ext) 4:59 PM
+Bharti - Application SR form is for SR. Application Incident request is for Incidents. So there are 2 forms in this case for end users so that they clearly know. Above was just an example.
+Reinhart, Philippe 5:00 PM
+can we see again quickly the SR form  on the screen ?  ( the screen where end user are entering requests?)
+Prabhala, Suchitra 5:00 PM
+[‎6/‎16/‎2016 4:37 PM] Prabhala, Suchitra: 
+
+Please press *6 to unmute your line if you have any questions during the session
+
+you may want o ping your question as well 
+
+to*
+
+[‎6/‎16/‎2016 4:38 PM] Prabhala, Suchitra: 
+
+there will be dedicated Q&A session at the end of the session as well 
+
+Francis, Ian 5:01 PM
+I don't think I have seen a lifecycle here: end user SR creation through to end user feedback and SR closure
+Reinhart, Philippe 5:01 PM
+yes SR
+request type will be the same as in current iman ?
+Manglani, Bharti (Ext) 5:02 PM
+Thanks PReeti
+Rao, Preeti (Ext) 5:05 PM
+Ian - So the SR and the backend fulfillemnt tickeket are directly tied which means if the WO is in pending the SR status is also pending. End users can also update SR work info for any more information that they want and this will get reflected in WO workinfor for teh support users.Similarly when support users resolves a Wo it resolves the SR too and user gets notified viz email If they are not happy with the resolution they also have an option to reopen to SR, which in turn reopens the backend Wo/Incident.
+Francis, Ian 5:05 PM
+OK, thanks
+Wheeler, Colin 5:06 PM
+Can the end user find out what the WO number is?
+Pomerants, Vera 5:06 PM
+Where current "Getting Started" I.MAN area will be migrated?
+Rao, Preeti (Ext) 5:07 PM
+Colin - Yes they can.Once they submit the SR they can actulayy see teh WO no. and also tract it.
+Revanna, Suresh S 5:07 PM
+Migration of tickets from Iman is essential to trace back to the tickets during the Audits, i do see a point to ensure migration of current IMan tickets
+Rao, Preeti (Ext) 5:08 PM
+Vera - Will take that question down, i do not have an ans now. BUt we will definitely revert.
+Prabhala, Suchitra 5:08 PM
+Suresh - Tickets will not be migrated migrated
+ig you have any knowledge in those tickets, you may want to recreate the knowledge into ROD
+IMAN will be available as read only after migration of the app till archieved
+Pomerants, Vera 5:09 PM
+Thank you. Additional question. Is there any target schedule when each application will be migrated? We support Jreview and Spotfire.
+Revanna, Suresh S 5:10 PM
+when this iman will be completely shut down?
+Prabhala, Suchitra 5:10 PM
+Suresh - starting nov mid this year
+Manglani, Bharti (Ext) 5:10 PM
+WIll the SLA clock stop if user does not respond on the ticket?
+Prabhala, Suchitra 5:10 PM
+Vera- Schedule has been discussed in few meeting with the releavant AMs and BIMs and DSG heads
+Revanna, Suresh S 5:11 PM
+thanks for the clarity provided Suchitra
+Prabhala, Suchitra 5:11 PM
+please contact your app AM
+Moussata, Oirdia 5:12 PM
+Will the data created in Iman avaiöable after shut down in order to make some trending regarding the incidents referring to a system?
+Pomerants, Vera 5:12 PM
+who we contact if after migration find out some info is not migrated as expected ?
+Prabhala, Suchitra 5:12 PM
+Oirdia - tickets will not be migrated migrated
+
+ig you have any knowledge in those tickets, you may want to recreate the knowledge into ROD 
+
+Marupadige, Sridhar 5:13 PM
+can you show again on how to navigate to supporter view
+Rao, Preeti (Ext) 5:13 PM
+Depending on what SLA set the ticekt is in  - Response SLA stops only when conditiond met i.e ticket acknowledged.Resolution SLA stops only after resolution
+Prabhala, Suchitra 5:13 PM
+Vera - you may send mail to us and we will redirect
+Manglani, Bharti (Ext) 5:13 PM
+Oki; so the clock wll not stop till the time ticket is fixed
+Rao, Preeti (Ext) 5:14 PM
+yes
+Manglani, Bharti (Ext) 5:15 PM
+can u ping user view link please for our testing? I just have the supporter view link.. 
+Ailani, Reena (Ext) 5:15 PM
+Preeti - How to extract SR/IM tickets report for an application
+Rao, Preeti (Ext) 5:15 PM
+go/SRM
+Manglani, Bharti (Ext) 5:15 PM
+this is QA Preeti?
+Rao, Preeti (Ext) 5:16 PM
+Reena - Please drop us email , will revert
+Ailani, Reena (Ext) 5:16 PM
+ok
+Chaudhary, Avinash (Ext) 5:16 PM
+How to create RFC in RoD?
+Prabhala, Suchitra 5:17 PM
+Please keep pinging your questions and we will try to reply to them sooner
+as Preeti will start her screenshare now
+Rao, Preeti (Ext) 5:17 PM
+you can use this for QA - https://novartis-qa.onbmc.com/arsys/forms/onbmc-s/SRS%3AServiceRequestConsole/Default+Administrator+View/?cacheid=7170b525&mode=CREATE <https://novartis-qa.onbmc.com/arsys/forms/onbmc-s/SRS:ServiceRequestConsole/Default+Administrator+View/?cacheid=7170b525&mode=CREATE>  
+Manglani, Bharti (Ext) 5:18 PM
+thanks Preeti
+Moussata, Oirdia 5:19 PM
+When the incident is assigned to a certain group, are we able to find out responsible persons who should work on it 
+Rao, Preeti (Ext) 5:31 PM
+Oirdia - as per process group coordinator of the support team is responsible for assigning incidents to a specefic individual iwthin the group.
+Moussata, Oirdia 5:31 PM
+Are we still in the scop eof this demo? I have assumed that we should have this demo for showing practice.
+Chaudhary, Avinash (Ext) 5:38 PM
+How to select manager group?
+by name itself, I am unable to guess anything.
+Cunha, Luis 5:41 PM
+What is ITTP and can this process be shared with eveyone?
+Francis, Ian 5:42 PM
+IT Tools and Processes
+Cunha, Luis 5:43 PM
+Thank you Ian, and is this process available to review?  Novapedia maybe?
+Francis, Ian 5:44 PM
+ITTP is the organization, I can send you the related SOP and process description for Change Management
+Chaudhary, Avinash (Ext) 5:44 PM
+thankx
+Cunha, Luis 5:44 PM
+much appreciated
+Prabhala, Suchitra 5:45 PM
+http://novapedia.pharma.novartis.intra/index.php/Development_IT_Support_for_End-users_in_Remedy_on_Demand_(EYoN) <http://novapedia.pharma.novartis.intra/index.php/Development_IT_Support_for_End-users_in_Remedy_on_Demand_%28EYoN%29>  
+Francis, Ian 5:45 PM
+SOP is attached to this chat
+Prabhala, Suchitra 5:45 PM
+this is the novapedia page for ROD
+Ciepielowski, Andrzej 5:45 PM
+Link to ITTP public repository: https://ph-collab.eu.novartis.net/sites/GISIGMR/Lists/EA%20ITTP%20Repository%20Public/Document%20Type.aspx <https://ph-collab.eu.novartis.net/sites/GISIGMR/Lists/EA%20ITTP%20Repository%20Public/Document%20Type.aspx>  
+Marupadige, Sridhar 5:49 PM
+can you maximize your screen..
+we cant see some of the screen actions
+Manglani, Bharti (Ext) 5:52 PM
+is there a way to create a PM from an IM?
+Rao, Preeti (Ext) 5:54 PM
+yes you can do that
+Manglani, Bharti (Ext) 5:54 PM
+Great thanks
+Revay, Peter Daniel (Ext) 5:55 PM
+we cant see any popup window in the presentation
+Ciepielowski, Andrzej 5:59 PM
+Preeti, we cannot hear you anymore
+Rao, Preeti (Ext) 6:00 PM
+Am i audiable?
+Prabhala, Suchitra 6:00 PM
+no
+Rao, Preeti (Ext) 6:00 PM
+oh ok..
+Vallentyne, Sudhir (Ext) 6:00 PM
+try to unmute/Mute
+Rao, Preeti (Ext) 6:00 PM
+did that
+Co and SO
+change coordinator and System owner
+for Business phase
+System owner and QA (only in case of GxP application) in implementation phase
+Change coordinator - Close down phase
+Manglani, Bharti (Ext) 6:03 PM
+I was chking the application availability in Novapedia 
+Where to check the servcie windows and public holidays defined for a resolver group?  
+
+1.	Click on "Application" on the left side to open the menu. 
+2.	Click on "Analytics" > "Analytics". 
+3.	Go to "Documents" > "Folders" and open "Public Folder" > "Novartis Custom Reporting". 
+4.	Expand "170 Foundation" and click "171 Foundation Enterprise". 
+5.	Double click the report "171011 Support Group Overview" and click open. 
+6.	Go to "Support Hours" tab. 
+7.	Add a filter on row 2. 
+8.	In column C you can filter by the respective resolver group. You should see two rows, one with availability (column E) "Available", one with availability "Unavailable". 
+9.	In columns F (Time) and G (Week Day) of the "Available" record you see the service window incl. available days. 
+10.	In column G (Date List) of the "Unavailable" record you see the public holidays where the service is not available. 
+11.	In case you don't see two records or in case of any doubts, please contact the NBS Basel IT Remedy Application Support group (nbs_basel_it.ras@novartis.com) for clarification. 
+
+but i do not see these details in QA env??
+is this valid for QA?
+6/17/2016
+You have been removed from this conversation. 7:57:43 AM
