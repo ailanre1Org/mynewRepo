@@ -30,7 +30,7 @@ public class AddMemberService {
 
             HttpURLConnection con = (HttpURLConnection) new URL("https://api.github.com/teams/" + teamId +"/memberships/" + userId).openConnection();
             con.setRequestMethod("PUT");
-            con.setRequestProperty("Authorization", "token d226c5ccad1ac12d6406290037924afbfa5d6744");
+            con.setRequestProperty("Authorization", "token " + token);
             con.setRequestProperty("Accept","*/*");
             con.setDoOutput(true);
             con.getOutputStream().write(data.getBytes("UTF-8"));
