@@ -23,27 +23,37 @@ public class TestGithubAPI {
 		URL url;
 		String userId = args[0];
 		String token = args[1];
+		int i=1;
 		try {
-			
-			url = new URL("https://api.github.com/orgs/Novartis-DevelopmentInformatics/teams?access_token=" + token);
-			// Get list of teams under organization
-			BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
-			
-			// Get the team Id for all teams
-		    for (String line; (line = reader.readLine()) != null;) {
-		        System.out.println(line);
-		        String word = "id";
-		        int index = line.indexOf(word);
-		        while (index >= 0) {
-		            
-		            String teamId = line.substring(index + 4, index +11);
-		            System.out.println("TeamId: " + teamId);
-		            
-		            AddMemberService ams = new AddMemberService();
-		            ams.addTeamMaintainer(userId, teamId, token);
-		            index = line.indexOf(word, index + 1);
-		        }
-		    }
+			do {
+				url = new URL("https://api.github.com/orgs/ailanre1Org/teams?access_token=" + token + "&page="+i+"&per_page=100");
+				// Get list of teams under organization
+				BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+				
+				String word = "id";
+				String line = reader.readLine();
+				if(line.indexOf(word) < 0)
+					break;
+				
+				// Get the team Id for all teams
+			    for (; line != null;) {
+			        System.out.println(line);
+			        //String word = "id";
+			        int index = line.indexOf(word);
+			        while (index >= 0) {
+			            
+			            String teamId = line.substring(index + 4, index +11);
+			            System.out.println("TeamId: " + teamId);
+			            
+			            AddMemberService ams = new AddMemberService();
+			            ams.addTeamMaintainer(userId, teamId, token);
+			            index = line.indexOf(word, index + 1);
+			        }
+			        
+			        line = reader.readLine();
+			    }
+			    i++;
+			} while(i < 10);
 		} catch (MalformedURLException e) {
 			
 			e.printStackTrace();
