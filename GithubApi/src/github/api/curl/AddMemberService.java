@@ -19,7 +19,7 @@ import javax.net.ssl.X509TrustManager;
 public class AddMemberService { 
 
     
-    public void addTeamMaintainer(String userId, String teamId, String token) {
+    public void updateTeamMaintainer(String userId, String teamId, String token, String requestMethod) {
         String data;
 
         try {
@@ -29,7 +29,7 @@ public class AddMemberService {
             disableCertificateValidation();
 
             HttpURLConnection con = (HttpURLConnection) new URL("https://api.github.com/teams/" + teamId +"/memberships/" + userId).openConnection();
-            con.setRequestMethod("PUT");
+            con.setRequestMethod(requestMethod);
             con.setRequestProperty("Authorization", "token " + token);
             con.setRequestProperty("Accept","*/*");
             con.setDoOutput(true);
@@ -46,6 +46,35 @@ public class AddMemberService {
             e.printStackTrace();
         }
     }
+    
+    public void removeTeamMaintainer(String userId, String teamId, String token) {
+        String data;
+
+        try {
+            
+        	data = "{\"role\":\"maintainer\"}";
+            // Disable cert validation
+            disableCertificateValidation();
+
+            HttpURLConnection con = (HttpURLConnection) new URL("https://api.github.com/teams/" + teamId +"/memberships/" + userId).openConnection();
+            con.setRequestMethod("DELETE");
+            con.setRequestProperty("Authorization", "token " + token);
+            con.setRequestProperty("Accept","*/*");
+            con.setDoOutput(true);
+            con.getOutputStream().write(data.getBytes("UTF-8"));
+
+            int status = con.getResponseCode();
+            System.out.println("Response code: " + status);
+            System.out.println("Response: " + con.getResponseMessage());
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public static void disableCertificateValidation() {
         // Create a trust manager that does not validate certificate chains

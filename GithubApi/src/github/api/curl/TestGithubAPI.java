@@ -21,8 +21,18 @@ public class TestGithubAPI {
 	
 	public static void main(String args[]) {
 		URL url;
+		if(args.length != 3) {
+			System.out.println("Usage: userId token [add][remove]");
+			System.exit(0);
+		}
 		String userId = args[0];
 		String token = args[1];
+		String addRemoveFlag = args[2];
+		
+		if(!(addRemoveFlag.equalsIgnoreCase("add") || addRemoveFlag.equalsIgnoreCase("remove"))) {
+			System.out.println("Invalid input");
+        	System.exit(0);
+		}
 		int i=1;
 		try {
 			do {
@@ -46,7 +56,12 @@ public class TestGithubAPI {
 			            System.out.println("TeamId: " + teamId);
 			            
 			            AddMemberService ams = new AddMemberService();
-			            ams.addTeamMaintainer(userId, teamId, token);
+			            if(addRemoveFlag.equalsIgnoreCase("add")) {
+			            	ams.updateTeamMaintainer(userId, teamId, token,"PUT");
+			            } else if(addRemoveFlag.equalsIgnoreCase("remove")){
+			            	ams.updateTeamMaintainer(userId, teamId, token, "DELETE");
+			            } 
+			            
 			            index = line.indexOf(word, index + 1);
 			        }
 			        
