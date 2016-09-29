@@ -47,35 +47,6 @@ public class AddMemberService {
         }
     }
     
-    public void removeTeamMaintainer(String userId, String teamId, String token) {
-        String data;
-
-        try {
-            
-        	data = "{\"role\":\"maintainer\"}";
-            // Disable cert validation
-            disableCertificateValidation();
-
-            HttpURLConnection con = (HttpURLConnection) new URL("https://api.github.com/teams/" + teamId +"/memberships/" + userId).openConnection();
-            con.setRequestMethod("DELETE");
-            con.setRequestProperty("Authorization", "token " + token);
-            con.setRequestProperty("Accept","*/*");
-            con.setDoOutput(true);
-            con.getOutputStream().write(data.getBytes("UTF-8"));
-
-            int status = con.getResponseCode();
-            System.out.println("Response code: " + status);
-            System.out.println("Response: " + con.getResponseMessage());
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
     public static void disableCertificateValidation() {
         // Create a trust manager that does not validate certificate chains
         TrustManager[] trustAllCerts = new TrustManager[] { new X509TrustManager() {
@@ -112,4 +83,30 @@ public class AddMemberService {
             // Do nothing
         }
     }
+
+	public void removeFromOrganization(String userId, String orgId, String token) {
+		
+		try {
+            // Disable cert validation
+            disableCertificateValidation();
+
+            HttpURLConnection con = (HttpURLConnection) new URL("https://api.github.com/orgs/" + orgId +"/memberships/" + userId).openConnection();
+            con.setRequestMethod("DELETE");
+            con.setRequestProperty("Authorization", "token " + token);
+            con.setRequestProperty("Accept","*/*");
+            con.setDoOutput(true);
+            //con.getOutputStream().write(data.getBytes("UTF-8"));
+
+            int status = con.getResponseCode();
+            System.out.println("Response code: " + status);
+            System.out.println("Response: " + con.getResponseMessage());
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+		
+	}
 }
